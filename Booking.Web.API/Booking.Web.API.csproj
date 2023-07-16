@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Booking.IdGenerator.InMemory\Booking.IdGenerator.InMemory.csproj" />
+      <ProjectReference Include="..\Booking.Repositories.EntityFramework\Booking.Repositories.EntityFramework.csproj" />
+      <ProjectReference Include="..\Booking\Booking.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="swagger-ui\custom.css" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot" />
+    </ItemGroup>
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+</Project>
