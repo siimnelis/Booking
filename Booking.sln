@@ -12,6 +12,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Repositories.Entity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Web.API", "Booking.Web.API\Booking.Web.API.csproj", "{478B263F-7A77-4473-A168-67A47F75269F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{7EE54A94-21A7-4E23-AB28-2361152BE16D}"
+	ProjectSection(SolutionItems) = preProject
+		Süsteemi üldine kirjeldus.docx = Süsteemi üldine kirjeldus.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
