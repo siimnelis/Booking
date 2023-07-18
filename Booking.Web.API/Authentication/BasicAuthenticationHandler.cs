@@ -30,7 +30,7 @@ public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSc
 
         var userId = value.Split(":")[0];
 
-        if (!new List<string>{"1", "2"}.Contains(userId))
+        if (!new List<string>{"1", "2", "3"}.Contains(userId))
             return Fail();
         
         var userIdentity = new UserContextIdentity(int.Parse(userId));
